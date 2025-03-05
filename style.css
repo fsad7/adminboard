@@ -1,0 +1,410 @@
+/* Basic Settings */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.icon {
+    width: 2em;
+    height: auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+/* Main */
+.main {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    
+}
+
+
+/* Dashboard */
+
+.dashboard {
+    background: linear-gradient(to Right, #1c94d3, #66b8db);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Logo and dashboard text*/
+.dashboard > p:first-child , .utl li, .help li {
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    gap: 13px; 
+    padding: 0.5em 0.5em;
+}
+
+.dashboard > P:first-child{
+    font-size: 2em;
+    font-weight: bolder;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-family: 'Roboto', sans-serif;
+} 
+
+/* Logo */
+.dashboard p img {
+    width: 1.65em;
+    height: 1.65em;
+}
+
+/* nav */
+
+.nav{
+    display: grid;
+    grid-auto-rows: 21em;
+    padding: 1em 1.5em;
+}
+
+.utl, .help {
+    display: flex;
+    flex-direction: column;
+    gap:0.2em;
+}
+
+.utl li, .help li{
+    gap: 1.3em;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease-in-out;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+}
+
+/* hover effect */
+
+.utl li:hover, .help li:hover {
+    color: white; 
+    transform: scale(1.1); 
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+    
+
+
+/* Right */
+
+.right {
+    display: grid;
+    grid-template-rows: 1fr  10fr;
+}
+
+
+/* Header */
+
+.header {
+    display: grid;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+    background-color: white; 
+    z-index: 10; 
+    padding-right: 2em;
+
+}
+
+/* Header top */
+
+.top {
+    display: flex;
+    flex: 1;
+    padding: 1em 0.5em;
+    justify-content: space-between;
+    gap: 10em;
+}
+
+.search {
+    display: flex;
+    flex:1;
+    align-items: center;
+    gap: 0.5em;
+}
+
+input {
+    flex: 1;
+    border-radius: 20px;
+    flex-basis: 100px;
+    height: 3em;
+}
+
+
+.profileBar {
+    display:flex;
+    align-items: center;
+    gap: 1.5em;
+}
+.profileBar img:nth-child(1):hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.profileBar img:nth-child(2) {
+    width: 2.5em;
+}
+
+.profileBar img:nth-child(2):hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.profileBar p:last-child {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.profileBar p:last-child:hover {
+   cursor: pointer;
+   transform: scale(1.1);
+}
+
+
+.search > img:first-child {
+    width: 5em;
+    height: 3em;
+}
+
+.search > img:first-child:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* Header bottom */
+.bottom {
+    display: grid ;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-columns: 1fr 5fr 3fr;
+    column-gap: 1em;
+    row-gap: 0.5em;
+    padding-bottom: 0.5em;
+    
+}
+
+.bottom button {
+    border-radius: 20px;
+    color: white;
+    background-color: #1992d4;
+    height: 3em;
+    width: 8em;
+    border: 0px;
+}
+
+/* Profile Picture*/
+.bottom img {
+    grid-row: 1 / 3;
+    width: 5em;
+    height: 5em;
+    justify-self: flex-end;
+}
+
+.greet {
+    grid-row: 1;
+    align-self:flex-end;
+
+}
+
+.name {
+    grid-row: 2;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    gap: 2em;
+    grid-row: 1 / -1;
+    align-self: center;
+}
+
+.buttons > button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+
+}
+
+
+/* Info */
+
+.info {
+    background-color: #e2e8f0;
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-template-rows: 1fr 2fr;
+   
+    
+}
+
+
+/* Projects */
+
+.projects > p {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    gap: 2em;
+    grid-column: 1 / 2; 
+    grid-row: 1 / 3;
+    align-items: start;
+}
+
+/* Cards */
+
+.cards {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    height: 100vh;   
+}
+
+.card {
+    background-color: white;
+    border-left: #1992d4;
+    border-left: 0.5em solid #f0b429;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+
+    display: grid;
+    gap: 0.5rem;   
+}   
+
+
+/* Text */
+
+.card .title {
+    font-size: 1.5em;
+    font-weight: bold;
+    align-self: flex-end;
+}
+
+.card .title, .card  .subtext {
+    padding-left: 1.2rem;
+    padding-right: 1.8rem;
+}
+
+.card .subtext {
+    color: #949494;
+    align-self: flex-start;
+    font-size: 1em;
+   
+}
+
+/* options */
+
+.options {
+    display: flex;
+    align-self: center;
+    justify-content: flex-end;
+    padding-right: 1.8rem;
+    gap: 1em;
+}
+
+
+/* annoucments */
+
+.ann {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    padding-top: 1.5em;
+    margin-right: 1em;
+}
+
+.ann > p, .trending> p {
+    font-size: 1.5em;
+    font-weight: bold;  
+    margin-left: 0.3em;
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+
+    padding: 2em;;
+    gap: 2em;
+    margin-top: 1.5em;;
+}
+
+.news1, .news2{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid #949494;
+    gap: 1em;
+    padding-bottom: 1.5em;
+}
+.news3 {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding-bottom: 1em;
+}
+
+.news .title {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+
+/* Users */
+
+.trending {
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
+    align-items: start;
+}
+
+.users {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2em;
+    gap: 1.5em;
+    margin-top: 1em;
+    margin-right: 1em;
+}
+
+.user1, .user2 , .user3, .user4 {
+   display: flex;
+   gap: 1em;
+}
+
+.users img {
+    width: 3em;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+
+.users p {
+    font-size: 1.2em;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+}
+
+
+
+
+
+
+
+
+
+
