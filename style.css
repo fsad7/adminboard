@@ -91,10 +91,6 @@ ul {
 
 /* Right */
 
-.right {
-    display: grid;
-    grid-template-rows: 1fr  10fr;
-}
 
 
 /* Header */
@@ -233,9 +229,6 @@ input {
     background-color: #e2e8f0;
     display: grid;
     grid-template-columns: 5fr 2fr;
-    grid-template-rows: 1fr 2fr;
-   
-    
 }
 
 
@@ -263,7 +256,7 @@ input {
     display: grid;
     gap: 1em;
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-    height: 100vh;   
+    flex:1;
 }
 
 .card {
@@ -365,6 +358,7 @@ input {
     flex-direction: column;
     margin-top: 3em;
     align-items: start;
+    margin-bottom: 1em;
 }
 
 .users {
